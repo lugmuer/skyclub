@@ -1,0 +1,5 @@
+C:\skyclub\SkyApi\SQLDatabaseProj\SQLDatabaseProj\bin\Debug\SQLDatabaseProj.dacpac
+C:\skyclub\SkyApi\SQLDatabaseProj\SQLDatabaseProj\bin\Debug\SQLDatabaseProj.dll
+C:\skyclub\SkyApi\SQLDatabaseProj\SQLDatabaseProj\bin\Debug\SQLDatabaseProj.pdb
+C:\skyclub\SkyApi\SQLDatabaseProj\SQLDatabaseProj\obj\Debug\SQLDatabaseProj.dll
+C:\skyclub\SkyApi\SQLDatabaseProj\SQLDatabaseProj\obj\Debug\SQLDatabaseProj.pdb
