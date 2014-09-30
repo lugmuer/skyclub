@@ -54,9 +54,9 @@ namespace SkyApi
             //    consumerKey: "",
             //    consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //    appId: "",
-            //    appSecret: "");
+            app.UseFacebookAuthentication(
+                appId: "297048947155112",
+                appSecret: "e187e7bf9049eaee3338b99d7b4fb5fb");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
