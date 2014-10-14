@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Database">
+  <DataContextMoniker Name="/DatabaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="86dd59a5-acec-407d-aedb-7e2fdc0743cc" absoluteBounds="0.75, 1.375, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/DatabaseDataContext/Airport" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a760c7a2-571c-4d42-9a2f-9afdf480c0af" absoluteBounds="0.765, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2ac0b945-a301-4131-89bc-b082735940fe" absoluteBounds="3.5, 0.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DatabaseDataContext/Flight" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e3112cb0-e176-418a-9a44-99bb54cdee87" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="10b87146-d3ae-4bbe-a5fb-e83a601601cf" absoluteBounds="6.25, 1.375, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/DatabaseDataContext/Flightmember" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d385d305-cdd4-474e-9c12-ff291f3590cf" absoluteBounds="6.265, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="54b2e85a-8c62-40b2-b7af-c67a4257ae7c" absoluteBounds="3.5, 5.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DatabaseDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40eb1a4f-d009-49cf-95a1-6831ea74b2b1" absoluteBounds="3.515, 5.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.06814697265625); (3.5 : 2.06814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/Airport/Airport_Flight" />
+      <nodes>
+        <classShapeMoniker Id="86dd59a5-acec-407d-aedb-7e2fdc0743cc" />
+        <classShapeMoniker Id="2ac0b945-a301-4131-89bc-b082735940fe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.65907348632813); (3.5 : 1.65907348632813)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/Airport/Airport_Flight1" />
+      <nodes>
+        <classShapeMoniker Id="86dd59a5-acec-407d-aedb-7e2fdc0743cc" />
+        <classShapeMoniker Id="2ac0b945-a301-4131-89bc-b082735940fe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.06814697265625); (6.25 : 2.06814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/Flight/Flight_Flightmember" />
+      <nodes>
+        <classShapeMoniker Id="2ac0b945-a301-4131-89bc-b082735940fe" />
+        <classShapeMoniker Id="10b87146-d3ae-4bbe-a5fb-e83a601601cf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.03929768880208); (7.25 : 6.03929768880208); (7.25 : 2.7612939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/User/User_Flightmember" />
+      <nodes>
+        <classShapeMoniker Id="54b2e85a-8c62-40b2-b7af-c67a4257ae7c" />
+        <classShapeMoniker Id="10b87146-d3ae-4bbe-a5fb-e83a601601cf" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
