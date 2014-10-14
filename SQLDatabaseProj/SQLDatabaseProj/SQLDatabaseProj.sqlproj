@@ -101,9 +101,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="SQLDatabaseProj.publish.xml" />
+    <None Include="Snapshots\SQLDatabaseProj_20141009_19-39-59.dacpac" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Airport.sql" />
     <Build Include="Flight.sql" />
+    <Build Include="User.sql" />
+    <Build Include="Flightmembers.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="SQLDatabaseProj.refactorlog" />
   </ItemGroup>
 </Project>

@@ -48,6 +48,49 @@ USE [$(DatabaseName)];
 
 
 GO
+PRINT N'Creating [dbo].[Flightmembers]...';
+
+
+GO
+SET ANSI_NULLS, QUOTED_IDENTIFIER OFF;
+
+
+GO
+CREATE TABLE [dbo].[Flightmembers] (
+    [Id]       INT NOT NULL,
+    [FlightId] INT NOT NULL,
+    [UserId]   INT NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+GO
+SET ANSI_NULLS, QUOTED_IDENTIFIER ON;
+
+
+GO
+PRINT N'Creating [dbo].[User]...';
+
+
+GO
+SET ANSI_NULLS, QUOTED_IDENTIFIER OFF;
+
+
+GO
+CREATE TABLE [dbo].[User] (
+    [Id]    INT           NOT NULL,
+    [Name]  VARCHAR (MAX) NOT NULL,
+    [Email] VARCHAR (MAX) NOT NULL,
+    [Token] VARCHAR (MAX) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+GO
+SET ANSI_NULLS, QUOTED_IDENTIFIER ON;
+
+
+GO
 PRINT N'Creating [dbo].[Flight]...';
 
 
@@ -57,11 +100,13 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER OFF;
 
 GO
 CREATE TABLE [dbo].[Flight] (
-    [Id]    INT           NOT NULL,
-    [Name]  VARCHAR (MAX) NULL,
-    [Date]  DATETIME      NULL,
-    [Start] VARCHAR (MAX) NULL,
-    [End]   VARCHAR (MAX) NULL,
+    [Id]       INT           NOT NULL,
+    [Name]     VARCHAR (MAX) NOT NULL,
+    [Date]     DATETIME      NOT NULL,
+    [Start]    VARCHAR (MAX) NULL,
+    [End]      VARCHAR (MAX) NULL,
+    [SourceId] INT           NOT NULL,
+    [TargetId] INT           NOT NULL,
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
@@ -80,8 +125,9 @@ SET ANSI_NULLS, QUOTED_IDENTIFIER OFF;
 
 GO
 CREATE TABLE [dbo].[Airport] (
-    [Id]   INT           IDENTITY (1, 1) NOT NULL,
-    [Name] VARCHAR (MAX) NULL,
+    [Id]     INT           IDENTITY (1, 1) NOT NULL,
+    [Name]   VARCHAR (MAX) NOT NULL,
+    [FsCode] VARCHAR (MAX) NOT NULL,
     CONSTRAINT [PK_Airport] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
@@ -89,6 +135,55 @@ CREATE TABLE [dbo].[Airport] (
 GO
 SET ANSI_NULLS, QUOTED_IDENTIFIER ON;
 
+
+GO
+PRINT N'Creating [dbo].[FK_Member_ToFlight]...';
+
+
+GO
+ALTER TABLE [dbo].[Flightmembers]
+    ADD CONSTRAINT [FK_Member_ToFlight] FOREIGN KEY ([FlightId]) REFERENCES [dbo].[Flight] ([Id]);
+
+
+GO
+PRINT N'Creating [dbo].[FK_Member_ToAirport]...';
+
+
+GO
+ALTER TABLE [dbo].[Flightmembers]
+    ADD CONSTRAINT [FK_Member_ToAirport] FOREIGN KEY ([UserId]) REFERENCES [dbo].[User] ([Id]);
+
+
+GO
+PRINT N'Creating [dbo].[FK_Flightsource_ToAirport]...';
+
+
+GO
+ALTER TABLE [dbo].[Flight]
+    ADD CONSTRAINT [FK_Flightsource_ToAirport] FOREIGN KEY ([SourceId]) REFERENCES [dbo].[Airport] ([Id]);
+
+
+GO
+PRINT N'Creating [dbo].[FK_Flighttarget_ToAirport]...';
+
+
+GO
+ALTER TABLE [dbo].[Flight]
+    ADD CONSTRAINT [FK_Flighttarget_ToAirport] FOREIGN KEY ([TargetId]) REFERENCES [dbo].[Airport] ([Id]);
+
+
+GO
+-- Refactoring step to update target server with deployed transaction logs
+
+IF OBJECT_ID(N'dbo.__RefactorLog') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[__RefactorLog] (OperationKey UNIQUEIDENTIFIER NOT NULL PRIMARY KEY)
+END
+GO
+IF NOT EXISTS (SELECT OperationKey FROM [dbo].[__RefactorLog] WHERE OperationKey = 'de6b65e8-81a0-4151-88a3-01c2e63dee13')
+INSERT INTO [dbo].[__RefactorLog] (OperationKey) values ('de6b65e8-81a0-4151-88a3-01c2e63dee13')
+
+GO
 
 GO
 PRINT N'Update complete.';

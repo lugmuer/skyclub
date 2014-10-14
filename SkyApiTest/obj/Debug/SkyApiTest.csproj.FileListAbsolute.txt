@@ -1,0 +1,16 @@
+C:\skyclub\SkyApi\SkyApiTest\bin\Debug\SkyApiTest.dll.config
+C:\skyclub\SkyApi\SkyApiTest\bin\Debug\SkyApiTest.dll
+C:\skyclub\SkyApi\SkyApiTest\bin\Debug\SkyApiTest.pdb
+C:\skyclub\SkyApi\SkyApiTest\bin\Debug\Newtonsoft.Json.dll
+C:\skyclub\SkyApi\SkyApiTest\bin\Debug\SkyApi.dll
+C:\skyclub\SkyApi\SkyApiTest\bin\Debug\System.Net.Http.Formatting.dll
+C:\skyclub\SkyApi\SkyApiTest\bin\Debug\System.Web.Http.dll
+C:\skyclub\SkyApi\SkyApiTest\bin\Debug\System.Web.Http.WebHost.dll
+C:\skyclub\SkyApi\SkyApiTest\bin\Debug\SkyApi.pdb
+C:\skyclub\SkyApi\SkyApiTest\bin\Debug\Newtonsoft.Json.xml
+C:\skyclub\SkyApi\SkyApiTest\bin\Debug\System.Net.Http.Formatting.xml
+C:\skyclub\SkyApi\SkyApiTest\bin\Debug\System.Web.Http.xml
+C:\skyclub\SkyApi\SkyApiTest\bin\Debug\System.Web.Http.WebHost.xml
+C:\skyclub\SkyApi\SkyApiTest\obj\Debug\SkyApiTest.csprojResolveAssemblyReference.cache
+C:\skyclub\SkyApi\SkyApiTest\obj\Debug\SkyApiTest.dll
+C:\skyclub\SkyApi\SkyApiTest\obj\Debug\SkyApiTest.pdb
