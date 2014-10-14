@@ -44,7 +44,9 @@ namespace SkyApi.Contracts
             var targetId = this.airPortRepository.GetAirPortIdByName(arrivalAirportFsCode);
 
             
-            this.LazyLoadAirports(sourceId, rootObject, departureAirportFsCode, targetId, arrivalAirportFsCode);
+            sourceId = this.LazyLoadAirports(sourceId, rootObject, departureAirportFsCode);
+            targetId = this.LazyLoadAirports(targetId, rootObject, arrivalAirportFsCode);
+
 
             return new Flight
             {
@@ -75,29 +77,21 @@ namespace SkyApi.Contracts
             return task.Result;
         }
 
-        private void LazyLoadAirports(int sourceId, RootObject rootObject, string departureAirportFsCode, int targetId,
-            string arrivalAirportFsCode)
+        private int LazyLoadAirports(int id, RootObject rootObject, string airportFsCode)
         {
-            if (sourceId < 0)
+            if (id < 0)
             {
-                var airport = rootObject.appendix.airports.SingleOrDefault(ap => ap.fs == departureAirportFsCode);
+                var airport = rootObject.appendix.airports.SingleOrDefault(ap => ap.fs == airportFsCode);
                 var airportDb = new Database.Airport
                 {
                     Name = airport.name,
                     FsCode = airport.fs
                 };
                 this.airPortRepository.Insert(airportDb);
+                id = airportDb.Id;
             }
-            if (targetId < 0)
-            {
-                var airport = rootObject.appendix.airports.SingleOrDefault(ap => ap.fs == arrivalAirportFsCode);
-                var airportDb = new Database.Airport
-                {
-                    Name = airport.name,
-                    FsCode = airport.fs
-                };
-                this.airPortRepository.Insert(airportDb);
-            }
+            return id;
+
         }
     }
 
