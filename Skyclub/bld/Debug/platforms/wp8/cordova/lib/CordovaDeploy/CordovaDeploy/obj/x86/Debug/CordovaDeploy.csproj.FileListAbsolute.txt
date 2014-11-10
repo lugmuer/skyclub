@@ -1,0 +1,6 @@
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\cordova\lib\CordovaDeploy\CordovaDeploy\bin\Debug\CordovaDeploy.exe.config
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\cordova\lib\CordovaDeploy\CordovaDeploy\bin\Debug\CordovaDeploy.exe
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\cordova\lib\CordovaDeploy\CordovaDeploy\bin\Debug\CordovaDeploy.pdb
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\cordova\lib\CordovaDeploy\CordovaDeploy\obj\x86\Debug\CordovaDeploy.csprojResolveAssemblyReference.cache
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\cordova\lib\CordovaDeploy\CordovaDeploy\obj\x86\Debug\CordovaDeploy.exe
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\cordova\lib\CordovaDeploy\CordovaDeploy\obj\x86\Debug\CordovaDeploy.pdb

@@ -1,0 +1,53 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "Properties/WMAppManifest.xml": {
+                "parents": {
+                    "/Deployment/App/Capabilities": [
+                        {
+                            "xml": "<Capability Name=\"ID_CAP_NETWORKING\" />",
+                            "count": 2
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"wp-package\" value=\"InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"wp-package\" value=\"StatusBar\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.ionic.keyboard": {
+            "PACKAGE_NAME": "{7F9DD47F-E0B8-4B66-A1E6-B421ACE61ED0}"
+        },
+        "com.msopentech.azure-mobile-services": {
+            "PACKAGE_NAME": "{7F9DD47F-E0B8-4B66-A1E6-B421ACE61ED0}"
+        },
+        "com.phonegap.plugins.facebookconnect": {
+            "PACKAGE_NAME": "{7F9DD47F-E0B8-4B66-A1E6-B421ACE61ED0}"
+        },
+        "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "{7F9DD47F-E0B8-4B66-A1E6-B421ACE61ED0}"
+        }
+    },
+    "dependent_plugins": {
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "{7F9DD47F-E0B8-4B66-A1E6-B421ACE61ED0}"
+        }
+    }
+}

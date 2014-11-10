@@ -1,0 +1,14 @@
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\Bin\Debug\ApplicationIcon.png
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\Bin\Debug\Background.png
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\Bin\Debug\io.cordova.Skyclub.dll
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\Bin\Debug\io.cordova.Skyclub.pdb
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\Bin\Debug\AppManifest.xaml
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\Bin\Debug\Properties\WMAppManifest.xml
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\Bin\Debug\CordovaAppProj_Debug_AnyCPU.xap
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\obj\Debug\App.g.cs
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\obj\Debug\cordovalib\CordovaView.g.cs
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\obj\Debug\MainPage.g.cs
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\obj\Debug\io.cordova.Skyclub.g.resources
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\obj\Debug\io.cordova.Skyclub.dll
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\obj\Debug\io.cordova.Skyclub.pdb
+C:\skyclub\Skyclub\Skyclub\bld\Debug\platforms\wp8\obj\Debug\XapCacheFile.xml

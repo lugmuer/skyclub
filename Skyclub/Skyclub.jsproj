@@ -1,0 +1,918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|iOS">
+      <Configuration>Debug</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x64">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x86">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|iOS">
+      <Configuration>Release</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x64">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x86">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-ARM">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Android">
+      <Configuration>Distribution</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|iOS">
+      <Configuration>Distribution</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-AnyCPU">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x64">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x86">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-ARM">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>043a212d-1c11-4b6c-bd70-00171721c036</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0'">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="ionic\css\ionic.css" />
+    <Content Include="ionic\css\ionic.min.css" />
+    <Content Include="ionic\fonts\ionicons.eot" />
+    <Content Include="ionic\fonts\ionicons.svg" />
+    <Content Include="ionic\fonts\ionicons.ttf" />
+    <Content Include="ionic\fonts\ionicons.woff" />
+    <Content Include="ionic\js\angular-ui\angular-ui-router.js" />
+    <Content Include="ionic\js\angular-ui\angular-ui-router.min.js" />
+    <Content Include="ionic\js\angular\angular-animate.js" />
+    <Content Include="ionic\js\angular\angular-animate.min.js" />
+    <Content Include="ionic\js\angular\angular-resource.js" />
+    <Content Include="ionic\js\angular\angular-resource.min.js" />
+    <Content Include="ionic\js\angular\angular-sanitize.js" />
+    <Content Include="ionic\js\angular\angular-sanitize.min.js" />
+    <Content Include="ionic\js\angular\angular.js" />
+    <Content Include="ionic\js\angular\angular.min.js" />
+    <Content Include="ionic\js\ionic-angular.js" />
+    <Content Include="ionic\js\ionic-angular.min.js" />
+    <Content Include="ionic\js\ionic.bundle.js" />
+    <Content Include="ionic\js\ionic.bundle.min.js" />
+    <Content Include="ionic\js\ionic.js" />
+    <Content Include="ionic\js\ionic.min.js" />
+    <Content Include="ionic\version.json" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\.fetch.json" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\LICENSE" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\.classpath" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\.project" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\AndroidManifest.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\android_setup_1.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\android_setup_2.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\assets\www\config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\assets\www\cordova.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\assets\www\cordova_plugins.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\assets\www\css\index.css" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\assets\www\img\logo.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\assets\www\index.html" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\assets\www\js\index.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\assets\www\plugins\com.phonegap.plugins.facebookconnect\www\phonegap\plugin\facebookConnectPlugin\facebookConnectPlugin.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\build.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\.classpath" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\.project" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\AndroidManifest.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\build.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\proguard-project.txt" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\project.properties" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\Address.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\Connection.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\ConnectionPool.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\HttpResponseCache.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\AbstractOutputStream.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Base64.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\DiskLruCache.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Dns.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\FaultRecoveringOutputStream.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\AbstractHttpInputStream.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\AbstractHttpOutputStream.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HeaderParser.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpAuthenticator.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpDate.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpEngine.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpResponseCache.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpsURLConnectionImpl.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpTransport.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpURLConnectionImpl.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\OkResponseCache.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\OkResponseCacheAdapter.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RawHeaders.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RequestHeaders.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\ResponseHeaders.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RetryableOutputStream.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RouteSelector.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\SpdyTransport.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\Transport.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\UnknownLengthHttpInputStream.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\NamedRunnable.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Platform.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\IncomingStreamHandler.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Ping.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Settings.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\SpdyConnection.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\SpdyReader.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\SpdyStream.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\SpdyWriter.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\StrictLineReader.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Util.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\OkHttpClient.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\OkResponseCache.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\ResponseSource.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\Route.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\com\squareup\okhttp\TunnelRequest.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\App.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\AuthenticationToken.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\CallbackContext.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\Config.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\CordovaActivity.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\CordovaArgs.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\CordovaChromeClient.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\CordovaInterface.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\CordovaPlugin.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\CordovaResourceApi.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebView.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebViewClient.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\DirectoryManager.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\DroidGap.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\ExifHelper.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\ExposedJsApi.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\FileHelper.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\IceCreamCordovaWebViewClient.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\JSONUtils.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\LinearLayoutSoftKeyboardDetect.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\LOG.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\NativeToJsMessageQueue.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\PluginEntry.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\PluginManager.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\PluginResult.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\ScrollEvent.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\CordovaLib\src\org\apache\cordova\Whitelist.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\android_sdk_version" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\build" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\build.bat" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\check_reqs" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\clean" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\clean.bat" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\defaults.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\android_sdk_version.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\appinfo.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\build.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\check_reqs.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\clean.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\device.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\emulator.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\exec.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\install-device" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\install-device.bat" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\install-emulator" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\install-emulator.bat" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\list-devices" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\list-devices.bat" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\list-emulator-images" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\list-emulator-images.bat" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\list-started-emulators" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\list-started-emulators.bat" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\log.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\run.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\start-emulator" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\lib\start-emulator.bat" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\log" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\log.bat" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\.bin\shjs" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\q\benchmark\compare-with-callbacks.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\q\benchmark\scenarios.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\q\CONTRIBUTING.md" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\q\LICENSE" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\q\package.json" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\q\q.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\q\queue.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\q\README.md" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\.documentup.json" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\.jshintrc" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\.npmignore" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\.travis.yml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\global.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\LICENSE" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\make.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\package.json" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\README.md" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\scripts\generate-docs.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\scripts\run-tests.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\shell.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\cat.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\cd.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\chmod.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\common.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\cp.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\dirs.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\echo.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\error.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\exec.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\find.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\grep.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\ls.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\mkdir.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\mv.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\popd.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\pushd.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\pwd.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\rm.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\sed.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\tempdir.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\test.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\to.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\toEnd.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\node_modules\shelljs\src\which.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\run" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\run.bat" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\version" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\cordova\version.bat" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\.classpath" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\.project" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\AndroidManifest.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\build.gradle" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\build.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\libs\android-support-v4.jar" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\libs\bolts-android-1.1.2.jar" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\libs\BUCK" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\project.properties" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_button_blue_focused.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_button_blue_normal.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_button_blue_pressed.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_button_grey_focused.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_button_grey_normal.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_button_grey_pressed.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_close.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_inverse_icon.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_logo.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_picker_magnifier.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_tooltip_black_background.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_tooltip_black_bottomnub.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_tooltip_black_topnub.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_tooltip_black_xout.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_tooltip_blue_background.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_tooltip_blue_bottomnub.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_tooltip_blue_topnub.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-hdpi\com_facebook_tooltip_blue_xout.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-ldpi\com_facebook_close.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-mdpi\com_facebook_button_blue_focused.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-mdpi\com_facebook_button_blue_normal.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-mdpi\com_facebook_button_blue_pressed.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-mdpi\com_facebook_inverse_icon.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-mdpi\com_facebook_picker_magnifier.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-mdpi\com_facebook_tooltip_black_background.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-mdpi\com_facebook_tooltip_black_bottomnub.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-mdpi\com_facebook_tooltip_black_topnub.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-mdpi\com_facebook_tooltip_black_xout.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-mdpi\com_facebook_tooltip_blue_background.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-mdpi\com_facebook_tooltip_blue_bottomnub.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-mdpi\com_facebook_tooltip_blue_topnub.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-mdpi\com_facebook_tooltip_blue_xout.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_button_blue_focused.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_button_blue_normal.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_button_blue_pressed.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_button_grey_focused.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_button_grey_normal.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_button_grey_pressed.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_close.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_inverse_icon.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_logo.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_picker_magnifier.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_tooltip_black_background.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_tooltip_black_bottomnub.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_tooltip_black_topnub.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_tooltip_black_xout.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_tooltip_blue_background.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_tooltip_blue_bottomnub.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_tooltip_blue_topnub.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable-xhdpi\com_facebook_tooltip_blue_xout.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_button_blue.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_button_blue_focused.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_button_blue_normal.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_button_blue_pressed.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_button_check.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_button_check_off.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_button_check_on.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_button_grey_focused.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_button_grey_normal.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_button_grey_pressed.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_close.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_inverse_icon.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_list_divider.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_list_section_header_background.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_loginbutton_silver.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_logo.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_picker_item_background.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_picker_list_focused.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_picker_list_longpressed.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_picker_list_pressed.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_picker_list_selector.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_picker_list_selector_background_transition.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_picker_list_selector_disabled.9.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_picker_top_button.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_place_default_icon.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_profile_default_icon.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_profile_picture_blank_portrait.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_profile_picture_blank_square.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_top_background.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_top_button.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\drawable\com_facebook_usersettingsfragment_background_gradient.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_friendpickerfragment.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_login_activity_layout.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_picker_activity_circle_row.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_picker_checkbox.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_picker_image.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_picker_list_row.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_picker_list_section_header.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_picker_search_box.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_picker_title_bar.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_picker_title_bar_stub.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_placepickerfragment.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_placepickerfragment_list_row.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_search_bar_layout.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_tooltip_bubble.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\layout\com_facebook_usersettingsfragment.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\values-es\strings.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\values-hdpi\dimens.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\values-he\strings.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\values-iw\strings.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\values-ldpi\dimens.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\values-mdpi\dimens.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\values-xhdpi\dimens.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\values\attrs.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\values\colors.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\values\drawables.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\values\strings.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\res\values\styles.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\AccessToken.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\AccessTokenSource.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\android\AsyncFacebookRunner.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\android\DialogError.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\android\Facebook.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\android\FacebookError.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\android\FbDialog.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\android\Util.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\AppEventsConstants.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\AppEventsLogger.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\AppLinkData.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\AuthorizationClient.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\BoltsMeasurementEventListener.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\FacebookAppLinkResolver.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\FacebookAuthorizationException.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\FacebookBroadcastReceiver.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\FacebookDialogException.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\FacebookException.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\FacebookGraphObjectException.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\FacebookOperationCanceledException.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\FacebookRequestError.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\FacebookSdkVersion.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\FacebookServiceException.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\FacebookTimeSpentData.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\GetTokenClient.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\HttpMethod.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\InsightsLogger.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\AnalyticsEvents.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\AttributionIdentifiers.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\CacheableRequestBatch.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\FileLruCache.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\ImageDownloader.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\ImageRequest.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\ImageResponse.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\ImageResponseCache.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\Logger.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\NativeProtocol.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\package-info.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\PlatformServiceClient.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\ServerProtocol.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\SessionAuthorizationType.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\SessionTracker.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\UrlRedirectCache.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\Utility.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\Validate.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\internal\WorkQueue.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\LegacyHelper.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\LoggingBehavior.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\LoginActivity.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\model\CreateGraphObject.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\model\GraphLocation.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\model\GraphMultiResult.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\model\GraphObject.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\model\GraphObjectList.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\model\GraphPlace.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\model\GraphUser.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\model\JsonUtil.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\model\OpenGraphAction.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\model\OpenGraphObject.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\model\PropertyName.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\NativeAppCallAttachmentStore.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\NativeAppCallContentProvider.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\NonCachingTokenCachingStrategy.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\ProgressNoopOutputStream.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\ProgressOutputStream.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\Request.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\RequestAsyncTask.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\RequestBatch.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\RequestOutputStream.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\RequestProgress.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\Response.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\Session.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\SessionDefaultAudience.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\SessionLoginBehavior.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\SessionState.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\Settings.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\SharedPreferencesTokenCachingStrategy.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\TestSession.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\TokenCachingStrategy.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\UiLifecycleHelper.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\widget\FacebookDialog.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\widget\FacebookFragment.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\widget\FriendPickerFragment.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\widget\GraphObjectAdapter.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\widget\GraphObjectCursor.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\widget\GraphObjectPagingLoader.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\widget\LoginButton.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\widget\PickerFragment.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\widget\PlacePickerFragment.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\widget\ProfilePictureView.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\widget\SimpleGraphObjectCursor.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\widget\ToolTipPopup.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\widget\UserSettingsFragment.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\FacebookLib\src\com\facebook\widget\WebDialog.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\platform_www\cordova.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\proguard-project.txt" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\project.properties" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\README.md" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\res\drawable-hdpi\icon.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\res\drawable-ldpi\icon.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\res\drawable-mdpi\icon.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\res\drawable-xhdpi\icon.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\res\drawable\icon.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\res\values\facebookconnect.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\res\values\strings.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\res\xml\config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\src\io\cordova\hellocordova\HelloCordova.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\android\src\org\apache\cordova\facebook\ConnectPlugin.java" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\.gitignore" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\.npmignore" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDV.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVAvailability.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVCommandDelegate.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVCommandDelegateImpl.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVCommandDelegateImpl.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVCommandQueue.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVCommandQueue.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVConfigParser.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVConfigParser.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVDebug.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVInvokedUrlCommand.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVInvokedUrlCommand.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVJSON.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVJSON.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVLocalStorage.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVLocalStorage.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVPlugin.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVPlugin.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVPluginResult.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVPluginResult.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVScreenOrientationDelegate.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVShared.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVTimer.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVTimer.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVURLProtocol.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVURLProtocol.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVUserAgentUtil.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVUserAgentUtil.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVViewController.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVWebViewDelegate.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVWebViewDelegate.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVWhitelist.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\CDVWhitelist.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\NSArray+Comparisons.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\NSArray+Comparisons.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\NSData+Base64.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\NSData+Base64.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\NSDictionary+Extensions.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\NSDictionary+Extensions.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\NSMutableArray+QueueAdditions.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\NSMutableArray+QueueAdditions.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\UIDevice+Extensions.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\Classes\UIDevice+Extensions.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\cordova.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\CordovaLib.xcodeproj\project.pbxproj" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\CordovaLib_Prefix.pch" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\CordovaLib\VERSION" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\build.xcconfig" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\check_reqs" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\clean" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\defaults.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\emulate" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\lib\copy-www-build-step.sh" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\lib\install-device" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\lib\install-emulator" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\lib\list-devices" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\lib\list-emulator-images" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\lib\list-started-emulators" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\lib\sim.applescript" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\lib\start-emulator" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\log" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\run" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\cordova\version" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\FacebookSDK" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Headers" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Resources" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\Facebook.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FacebookSDK.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBAccessTokenData.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBAppCall.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBAppEvents.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBAppLinkData.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBAppLinkResolver.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBCacheDescriptor.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBColor.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBConnect.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBDialog.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBDialogs.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBDialogsData.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBDialogsParams.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBError.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBErrorUtility.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBFrictionlessRecipientCache.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBFrictionlessRequestSettings.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBFriendPickerViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBGraphLocation.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBGraphObject.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBGraphObjectPickerViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBGraphPerson.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBGraphPlace.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBGraphUser.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBInsights.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBLikeControl.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBLinkShareParams.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBLoginDialog.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBLoginTooltipView.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBLoginView.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBNativeDialogs.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBOpenGraphAction.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBOpenGraphActionParams.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBOpenGraphActionShareDialogParams.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBOpenGraphObject.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBPeoplePickerViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBPhotoParams.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBPlacePickerViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBProfilePictureView.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBRequest.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBRequestConnection.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBSDKMacros.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBSession.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBSessionManualTokenCachingStrategy.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBSessionTokenCachingStrategy.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBSettings.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBShareDialogParams.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBShareDialogPhotoParams.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBTaggableFriendPickerViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBTestSession.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBTooltipView.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBUserSettingsViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\FBWebDialogs.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\DeprecatedHeaders\NSError+FBError.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\FacebookSDK" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FacebookSDK.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBAccessTokenData.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBAppCall.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBAppEvents.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBAppLinkData.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBAppLinkResolver.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBCacheDescriptor.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBColor.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBDialogs.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBDialogsData.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBDialogsParams.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBError.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBErrorUtility.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBFrictionlessRecipientCache.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBFriendPickerViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBGraphLocation.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBGraphObject.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBGraphObjectPickerViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBGraphPerson.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBGraphPlace.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBGraphUser.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBInsights.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBLikeControl.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBLinkShareParams.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBLoginTooltipView.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBLoginView.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBNativeDialogs.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBOpenGraphAction.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBOpenGraphActionParams.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBOpenGraphActionShareDialogParams.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBOpenGraphObject.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBPeoplePickerViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBPhotoParams.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBPlacePickerViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBProfilePictureView.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBRequest.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBRequestConnection.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBSDKMacros.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBSession.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBSessionTokenCachingStrategy.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBSettings.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBShareDialogParams.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBShareDialogPhotoParams.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBTaggableFriendPickerViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBTestSession.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBTooltipView.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBUserSettingsViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\FBWebDialogs.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Headers\NSError+FBError.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FacebookSDKResources.bundle.README" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FBUserSettingsViewResources.bundle\Contents\Resources\en.lproj\Localizable.strings" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FBUserSettingsViewResources.bundle\Contents\Resources\he.lproj\Localizable.strings" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FBUserSettingsViewResources.bundle\images\facebook-logo%402x.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FBUserSettingsViewResources.bundle\images\facebook-logo.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPadLandscape%402x.jpg" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPadLandscape.jpg" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPadPortrait%402x.jpg" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPadPortrait.jpg" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPhonePortrait%402x.jpg" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPhonePortrait.jpg" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FBUserSettingsViewResources.bundle\images\silver-button-normal%402x.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FBUserSettingsViewResources.bundle\images\silver-button-normal.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FBUserSettingsViewResources.bundle\images\silver-button-pressed%402x.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\FBUserSettingsViewResources.bundle\images\silver-button-pressed.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\A\Resources\Info.plist" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\FacebookSDK.framework\Versions\Current" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova.xcodeproj\project.pbxproj" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\.gitignore" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Classes\AppDelegate.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Classes\AppDelegate.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Classes\MainViewController.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Classes\MainViewController.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Classes\MainViewController.xib" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\HelloCordova-Info.plist" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\HelloCordova-Prefix.pch" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\main.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Plugins\com.phonegap.plugins.facebookconnect\FacebookConnectPlugin.h" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Plugins\com.phonegap.plugins.facebookconnect\FacebookConnectPlugin.m" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\de.lproj\Localizable.strings" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\en.lproj\Localizable.strings" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\es.lproj\Localizable.strings" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\icons\icon%402x.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\icons\icon-40%402x.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\icons\icon-40.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\icons\icon-50%402x.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\icons\icon-50.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\icons\icon-60%402x.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\icons\icon-60.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\icons\icon-72%402x.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\icons\icon-72.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\icons\icon-76%402x.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\icons\icon-76.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\icons\icon-small%402x.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\icons\icon-small.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\icons\icon.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\se.lproj\Localizable.strings" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\splash\Default%402x~iphone.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\splash\Default-568h%402x~iphone.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\splash\Default-Landscape%402x~ipad.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\splash\Default-Landscape~ipad.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\splash\Default-Portrait%402x~ipad.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\splash\Default-Portrait~ipad.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\HelloCordova\Resources\splash\Default~iphone.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\platform_www\cordova.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\README.md" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\www\config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\www\cordova.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\www\cordova_plugins.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\www\css\index.css" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\www\img\logo.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\www\index.html" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\www\js\index.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\ios\www\plugins\com.phonegap.plugins.facebookconnect\www\phonegap\plugin\facebookConnectPlugin\facebookConnectPlugin.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\pg-build\guide\installed_plugins.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\pg-build\guide\update_button.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\pg-build\README.md" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\web\guide\add_hostname.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\web\guide\create_new_app.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\web\guide\fb_sample.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\web\guide\getting_started.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\web\guide\hosting.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\web\guide\PARSE_GUIDE.md" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\web\guide\parse_new.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\platforms\web\README.md" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\plugin.xml" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\README.md" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\www\config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\www\css\index.css" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\www\img\logo.png" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\www\index.html" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\www\js\facebookConnectPlugin.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\www\js\index.js" />
+    <Content Include="plugins\com.phonegap.plugins.facebookconnect\www\phonegap\plugin\facebookConnectPlugin\facebookConnectPlugin.js" />
+    <Content Include="scripts\services.js" />
+    <Folder Include="images\" />
+    <Content Include="merges\android\scripts\android2.3-jscompat.js" />
+    <Content Include="merges\android\scripts\platformOverrides.js" />
+    <Folder Include="merges\ios\" />
+    <Content Include="merges\windows8\scripts\platformOverrides.js" />
+    <Content Include="merges\windows8\scripts\winstore-jscompat.js" />
+    <Folder Include="merges\wp8\" />
+    <Folder Include="res\icons\android\" />
+    <Folder Include="res\icons\ios\" />
+    <Folder Include="res\icons\wp8\" />
+    <Folder Include="res\icons\windows8\" />
+    <Folder Include="res\screens\android\" />
+    <Folder Include="res\screens\ios\" />
+    <Folder Include="res\screens\windows8\" />
+    <Folder Include="res\screens\wp8\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="index.html" />
+    <Content Include="plugins\cordova-azure-mobile-services-master\LICENSE" />
+    <Content Include="plugins\cordova-azure-mobile-services-master\plugin.xml" />
+    <Content Include="plugins\cordova-azure-mobile-services-master\README.md" />
+    <Content Include="plugins\cordova-azure-mobile-services-master\www\MobileServices.Web-1.2.5.js" />
+    <Content Include="plugins\cordova-azure-mobile-services-master\www\MobileServices.Web.Ext.js" />
+    <Content Include="plugins\ionic-plugins-keyboard-master\.gitignore" />
+    <Content Include="plugins\ionic-plugins-keyboard-master\LICENSE" />
+    <Content Include="plugins\ionic-plugins-keyboard-master\package.json" />
+    <Content Include="plugins\ionic-plugins-keyboard-master\plugin.xml" />
+    <Content Include="plugins\ionic-plugins-keyboard-master\README.md" />
+    <Content Include="plugins\ionic-plugins-keyboard-master\src\android\IonicKeyboard.java" />
+    <Content Include="plugins\ionic-plugins-keyboard-master\src\ios\IonicKeyboard.h" />
+    <Content Include="plugins\ionic-plugins-keyboard-master\src\ios\IonicKeyboard.m" />
+    <Content Include="plugins\ionic-plugins-keyboard-master\src\ios\UIWebViewExtension.h" />
+    <Content Include="plugins\ionic-plugins-keyboard-master\src\ios\UIWebViewExtension.m" />
+    <Content Include="plugins\ionic-plugins-keyboard-master\www\keyboard.js" />
+    <Content Include="scripts\app.js" />
+    <Content Include="scripts\platformOverrides.js" />
+    <Content Include="css\index.css" />
+    <Content Include="res\cert\android\ant.properties" />
+    <Content Include="res\icons\android\icon-36-ldpi.png" />
+    <Content Include="res\icons\android\icon-48-mdpi.png" />
+    <Content Include="res\icons\android\icon-72-hdpi.png" />
+    <Content Include="res\icons\android\icon-96-xhdpi.png" />
+    <Content Include="res\icons\ios\icon-40.png" />
+    <Content Include="res\icons\ios\icon-40-2x.png" />
+    <Content Include="res\icons\ios\icon-50.png" />
+    <Content Include="res\icons\ios\icon-50-2x.png" />
+    <Content Include="res\icons\ios\icon-57.png" />
+    <Content Include="res\icons\ios\icon-57-2x.png" />
+    <Content Include="res\icons\ios\icon-60.png" />
+    <Content Include="res\icons\ios\icon-60-2x.png" />
+    <Content Include="res\icons\ios\icon-72.png" />
+    <Content Include="res\icons\ios\icon-72-2x.png" />
+    <Content Include="res\icons\ios\icon-76.png" />
+    <Content Include="res\icons\ios\icon-76-2x.png" />
+    <Content Include="res\icons\ios\icon-small.png" />
+    <Content Include="res\icons\ios\icon-small-2x.png" />
+    <Content Include="res\icons\windows8\logo.png" />
+    <Content Include="res\icons\windows8\smalllogo.png" />
+    <Content Include="res\icons\windows8\storelogo.png" />
+    <Content Include="res\icons\wp8\icon-62-tile.png" />
+    <Content Include="res\icons\wp8\icon-173-tile.png" />
+    <Content Include="res\screens\android\screen-hdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-hdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-ldpi-landscape.png" />
+    <Content Include="res\screens\android\screen-ldpi-portrait.png" />
+    <Content Include="res\screens\android\screen-mdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-mdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-xhdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-xhdpi-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape-2x.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-568h-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait-2x.png" />
+    <Content Include="res\screens\windows8\splashscreen.png" />
+    <Content Include="res\screens\wp8\screen-portrait.jpg" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Distribution'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(AppData)\npm\node_modules\vs-mda-targets\Microsoft.MDA.targets" />
+  <Import Project="$(AppData)\npm\node_modules\vs-mda-targets\Microsoft.TypeScript.MDA.targets" />
+  <PropertyGroup>
+    <ProjectUISubcaption>Multi-Device Hybrid App</ProjectUISubcaption>
+  </PropertyGroup>
+  <Target Name="EnsureBuildPrerequisites">
+    <!-- These errors will trigger if building from inside Visual Studio and requirements could not be determined -->
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(NodeJsDir) == ''" Text="Path to NodeJs could not be determined. Please check that NodeJs has been installed." />
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(MDAVsixDir) == ''" Text="Path to the Visual Studio Extension for Multi-Device Hybrid Apps could not be determined. Please check that the extension has been installed." />
+    <!-- These errors will trigger if building from outside Visual Studio (e.g. command line) and environment variables have not been set -->
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(NodeJsDir) == ''" Text="Path to NodeJs has not been specified. Please check that NodeJs has been installed and set the NodeJsDir environment variable before building." />
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(MDAVsixDir) == ''" Text="Path to Visual Studio Extension for Multi-Device Hybrid Apps has not been specified. Please install it and set the MDAVsixDir environment variable before building." />
+    <!-- Sanity check that things exist in the specified places. These are more likely to fail if building outside Visual Studio and the required environment variables have not been set, or set incorrectly. -->
+    <Error Condition="!Exists('$(NodeJsDir)') Or !Exists('$(NodeJsDir)\node.exe')" Text="The specified NodeJs directory $(NodeJsDir) either does not exist, or does not contain node.exe. Please check that NodeJs has been installed, and set the NodeJsDir variable to the correct directory." />
+    <Error Condition="!Exists('$(MDAVsixDir)') Or !Exists('$(MDAVsixDir)\packages\vs-mda')" Text="The specified directory to the Visual Studio extension $(MDAVsixDir)\node.exe either does not exist, or does not contain a packages\vs-mda sub-directory. Please check that the extension directory exists and set the MDAVsixDir variable to the correct directory." />
+    <!-- Installs (if necessary) the supporting Nodejs module -->
+    <Exec Command="&quot;$(MDAVsixDir)&quot;\packages\vs-mda\install &quot;$(NodeJsDir)&quot; &quot;$(MDAVsixDir)&quot;\packages\vs-mda" />
+  </Target>
+</Project>
