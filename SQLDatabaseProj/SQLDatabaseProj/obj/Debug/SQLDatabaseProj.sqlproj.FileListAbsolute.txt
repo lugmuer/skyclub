@@ -1,0 +1,9 @@
+C:\skyclub\SkyApi\SQLDatabaseProj\SQLDatabaseProj\bin\Debug\SQLDatabaseProj.dacpac
+C:\skyclub\SkyApi\SQLDatabaseProj\SQLDatabaseProj\bin\Debug\SQLDatabaseProj.dll
+C:\skyclub\SkyApi\SQLDatabaseProj\SQLDatabaseProj\bin\Debug\SQLDatabaseProj.pdb
+C:\skyclub\SkyApi\SQLDatabaseProj\SQLDatabaseProj\obj\Debug\SQLDatabaseProj.dll
+C:\skyclub\SkyApi\SQLDatabaseProj\SQLDatabaseProj\obj\Debug\SQLDatabaseProj.pdb
+C:\skyclub\SkyApi\SQLDatabaseProj\SQLDatabaseProj\obj\Debug\Model.xml
+C:\skyclub\SkyApi\SQLDatabaseProj\SQLDatabaseProj\obj\Debug\refactor.xml
+C:\skyclub\SkyApi\SQLDatabaseProj\SQLDatabaseProj\obj\Debug\postdeploy.sql
+C:\skyclub\SkyApi\SQLDatabaseProj\SQLDatabaseProj\obj\Debug\predeploy.sql

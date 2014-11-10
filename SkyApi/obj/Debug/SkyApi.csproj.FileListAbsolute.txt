@@ -1,0 +1,13 @@
+C:\skyclub\SkyApi\SkyApi\bin\SkyApi.dll.config
+C:\skyclub\SkyApi\SkyApi\bin\SkyApi.dll
+C:\skyclub\SkyApi\SkyApi\bin\SkyApi.pdb
+C:\skyclub\SkyApi\SkyApi\bin\Newtonsoft.Json.dll
+C:\skyclub\SkyApi\SkyApi\bin\System.Net.Http.Formatting.dll
+C:\skyclub\SkyApi\SkyApi\bin\System.Web.Http.dll
+C:\skyclub\SkyApi\SkyApi\bin\System.Web.Http.WebHost.dll
+C:\skyclub\SkyApi\SkyApi\bin\Newtonsoft.Json.xml
+C:\skyclub\SkyApi\SkyApi\bin\System.Net.Http.Formatting.xml
+C:\skyclub\SkyApi\SkyApi\bin\System.Web.Http.xml
+C:\skyclub\SkyApi\SkyApi\bin\System.Web.Http.WebHost.xml
+C:\skyclub\SkyApi\SkyApi\obj\Debug\SkyApi.dll
+C:\skyclub\SkyApi\SkyApi\obj\Debug\SkyApi.pdb
